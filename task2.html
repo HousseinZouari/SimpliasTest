@@ -1,0 +1,28 @@
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLSLunNiRo1fyKV7QP_9OL3Xn9g33UdhY&v=3.exp&sensor=true&libraries=geometry"></script>
+
+<script src="index.js"></script>
+
+
+<body style="margin:0px; padding:0px;" >
+ <input type="hidden" id="address" value="Second Steet, New York" placeholder="Input Address"/>
+ <select id="radius_km">
+	 <option value=1>1km</option>
+	 <option value=2>2km</option>
+	 <option value=5>5km</option>
+	 <option value=30>30km</option>
+ </select>
+ <select id="location_type">
+	 <option value="restaurant">Restaurant</option>
+	 <option value="school">School</option>
+ </select>
+
+ <button onClick="showCloseLocations()">Show Locations In Radius</button>
+ <div id="map_canvas"  style="width:100%; height:100%;">
+  
+
+   
+</body>
+</html>
